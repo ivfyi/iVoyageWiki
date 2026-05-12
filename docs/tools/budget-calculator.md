@@ -85,6 +85,7 @@ description: "出国旅行预算规划和费用计算工具，支持多币种"
 </div>
 
 <script>
+if (typeof window !== 'undefined') {
 function calculate() {
   const days = parseInt(document.getElementById('days').value) || 1
   const people = parseInt(document.getElementById('people').value) || 1
@@ -126,4 +127,5 @@ document.addEventListener('DOMContentLoaded', () => {
   calculate()
   document.querySelectorAll('input, select').forEach(el => el.addEventListener('input', calculate))
 })
+}
 </script>
