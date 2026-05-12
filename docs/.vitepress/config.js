@@ -33,6 +33,7 @@ export default defineConfig({
   title: 'iVoyageWiki',
   description: '出游旅行一站式指南 - 新手出行必备攻略',
   lang: 'zh-CN',
+  base: '/iVoyageWiki/',
   cleanUrls: true,
   lastUpdated: true,
 
