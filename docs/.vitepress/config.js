@@ -56,6 +56,8 @@ export default defineConfig({
         ...baseOptions,
         scanStartPath: 'knowledge',
         resolvePath: '/knowledge/',
+        useFolderLinkFromIndexFile: true,
+        includeFolderIndexFile: false,
       }), '/knowledge/'),
       '/tools/': makeLinksAbsolute(generateSidebar({
         ...baseOptions,
